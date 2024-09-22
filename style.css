@@ -169,7 +169,7 @@ footer {
 }
 
 #connect{
-    min-height:none;
+    min-height:0px;
 }
 
 p {
