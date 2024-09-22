@@ -161,12 +161,15 @@ footer {
 
 .separator {
     padding: 3em;
-    min-height: 50em;
     height: fit-content;
-    min-height: 110vh;
+    min-height: 105vh;
     background-color: #b4b4b5;
     color: #302547;
     overflow: inherit;
+}
+
+#connect{
+    min-height:none;
 }
 
 p {
