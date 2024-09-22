@@ -10,6 +10,7 @@ body{
 @media (min-width:300px) {
     /* phones */
     .sidebar {
+        padding:7px 2px 7px 0px;
         text-indent: 25px;
         position: fixed;
         top: 0;
