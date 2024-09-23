@@ -40,7 +40,7 @@
                     </h4>
                 </div>
                 <div class="row">
-                    <div class="col-sm">
+                    <div class="col-sm d-flex align-items-center">
                         <img src="../images/projects/ndvi.png" title="ndvi" alt="ndvi">
                     </div>
                     <div class="col-sm">
@@ -59,29 +59,31 @@
                         the frontend & the image library. The API & image library may be hosted on their own server
                         (separate from frontend) as part of modular design.
                     </div>
-                    <div class="col-sm">
+                    <div class="col-sm d-flex align-items-center">
                         <img src="../images/projects/ndvi/architecture.png" title="architecture" alt="architecture">
                     </div>
 
                 </div>
-                <div class = "row">
+                <div class="row">
                     <div class="col-sm">
                         <h3>Image Alignment</h3>
                         For many multispectral cameras, the sensors for each band are physically separated on the drone.
-                        This creates an offset between the bands, which is more noticeable the closer the drone flies to the
+                        This creates an offset between the bands, which is more noticeable the closer the drone flies to
+                        the
                         ground. The image on the left is the combined B, G, and R bands without any alignment. The image
                         library implements an image alignment algorithm to mitigate this issue, as seen in the rightmost
                         image below:
                     </div>
                 </div>
-                <div class = "row">
+                <div class="row">
 
-                <div class="col-sm">
-                    <img src="../images/projects/ndvi/align.png" title="align" alt="align">
-                </div></div>
+                    <div class="col-sm d-flex align-items-center">
+                        <img src="../images/projects/ndvi/align.png" title="align" alt="align">
+                    </div>
+                </div>
 
                 <div class="row">
-                    <div class="col-sm">
+                    <div class="col-sm d-flex align-items-center">
                         <img src="../images/projects/ndvi/image.png" title="image" alt="image">
                     </div>
                     <div class="col-sm">
@@ -97,60 +99,66 @@
                         </ul>
                     </div>
                 </div>
+                <div class="row">
 
-                <div class="col-sm">
-                    <details>
-                        <summary>Other Features</summary>
-                        <div>
-                            <ul class = "space-under">
+                    <div class="col-sm">
+                        <details>
+                            <summary>Other Features</summary>
+                            <div>
+                                <ul class="space-under">
+                                    <li>
+                                        Customizable colormaps
+                                    </li>
+                                    <li>
+                                        Image download as PNG, TIF, or JPEG
+                                    </li>
+                                    <li>
+                                        Single-image upload or bulk upload
+                                    </li>
+                                    <li>
+                                        Multiple algorithms:
+                                        <ul>
+                                            <li>
+                                                NDVI - Normalized Difference Vegetation Index
+                                            </li>
+                                            <li>
+                                                SAVI - Soil Adjusted Vegetation Index
+                                            </li>
+                                            <li>
+                                                VARI - Visible Atmospherically Resistant Index
+                                            </li>
+                                            <li>
+                                                BAI - Burn Area Index
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <details>
+                            <summary>Future Work</summary>
+                            <ul class="space-under">
                                 <li>
-                                    Customizable colormaps
-                                </li>
-                                <li>
-                                    Image download as PNG, TIF, or JPEG
-                                </li>
-                                <li>
-                                    Single-image upload or bulk upload
-                                </li>
-                                <li>
-                                    Multiple algorithms:
+                                    GPS data use & image-stitching capabilities
                                     <ul>
-                                        <li>
-                                            NDVI - Normalized Difference Vegetation Index
-                                        </li>
-                                        <li>
-                                            SAVI - Soil Adjusted Vegetation Index
-                                        </li>
-                                        <li>
-                                            VARI - Visible Atmospherically Resistant Index
-                                        </li>
-                                        <li>
-                                            BAI - Burn Area Index
-                                        </li>
+                                        <li>rasterio python library is already used in the image library, which will
+                                            make implementation of this feature relatively simple</li>
                                     </ul>
                                 </li>
+                                <li>
+                                    Database implementation for tracking of vegetation imagery over time for a given
+                                    area
+                                </li>
+                                <li>
+                                    User accounts & login for greater security & customization of user experience
+                                </li>
                             </ul>
-                        </div>
-                    </details>
-                </div>
-                <div class="col-sm">
-                    <details>
-                        <summary>Future Work</summary>
-                        <ul class = "space-under">
-                            <li>
-                                GPS data use & image-stitching capabilities
-                                <ul>
-                                    <li>rasterio python library is already used in the image library, which will make implementation of this feature relatively simple</li>
-                                </ul>
-                            </li>
-                            <li>
-                                Database implementation for tracking of vegetation imagery over time for a given area
-                            </li>
-                            <li>
-                                User accounts & login for greater security & customization of user experience
-                            </li>
-                        </ul>
-                    </details>
+                        </details>
+                    </div>
                 </div>
             </div>
         </div>

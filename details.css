@@ -38,7 +38,7 @@ details div img{
 }
 
 .space-under{
-    padding: 0em 0.2em 1em 0.2em;
+    padding: 0em 0.2em 1em 30px;
 }
 
 .row{
@@ -47,11 +47,10 @@ details div img{
 
 
 details {
-    margin:2em 0em;
     background: #e4eaef;
     border-radius: 5px;
-    width:fit-content;
-    min-width:100%;
+    /* width:fit-content; */
+    /* width:60vw; */
 
 }
 
