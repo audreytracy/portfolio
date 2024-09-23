@@ -67,19 +67,25 @@ body{
     padding: 5px;
 }
 
-.card-deck {
-    padding-left: 10em;
-    width: 80%;
+.card-subtitle{
+    align-items:right;
+}
+
+a .card:hover{
+    font-weight:normal;
 }
 
 .card {
 
-    border-color: #727272;
+    
+
+    border-radius:1em;
+    background-color: #cbcbcb;
     margin: -1px;
 
     img {
+        border-radius:1em;
         background-color: #313131;
-
     }
 
     a {
@@ -87,6 +93,8 @@ body{
     }
 
     .card-body {
+        border-radius:1em;
+
         background-color: #cbcbcb;
 
         div,
@@ -101,6 +109,11 @@ body{
         }
     }
 
+}
+
+#projects .card:hover{
+    border-color:#c0c0c1;
+    border-width: 3px;
 }
 
 h1 {
@@ -151,14 +164,6 @@ a:hover {
     background-image: url("images/backgrounds/plane.jpg");
 }
 
-footer {
-    font-size: 50%;
-    background-color: #9d9d9d;
-
-    p {
-        padding:5px;
-    }
-}
 
 .separator {
     padding: 3em;
@@ -178,7 +183,7 @@ p {
     margin: auto;
     width: 80%;
     padding-top: 60px;
-    font-size: calc(60% + 1vw);
+    font-size: calc(50% + 1vw);
 
     a {
         color: #302547;
@@ -186,5 +191,14 @@ p {
 
     a:hover {
         color: #302547;
+    }
+}
+
+footer {
+    background-color: #9d9d9d;
+    p {
+        color:rgb(232, 232, 232);
+        font-size: 1vw;
+        padding:5px;
     }
 }

@@ -1,0 +1,27 @@
+summary {
+    list-style-position: outside;
+    margin-left: 30px;
+    padding: 10px 10px 10px 20px;
+    border-radius: 5px;
+}
+
+details[open] summary {
+    border-radius: 5px 5px 0 0;
+}
+
+div {
+
+    padding-left: 5em;
+    padding-right: 5em;
+
+    img{
+        width:1em;
+    }
+}
+
+details {
+    margin:2em 5em;
+    background: #e4eaef;
+    border-radius: 5px;
+}
+
