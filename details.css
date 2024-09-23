@@ -10,23 +10,19 @@ h4{
 }
 
 h2{
-    margin-top:3em;
+    margin-top:1em;
 }
-
 
 .container{
     margin-top:1em;
-    width:80%;
-}
-
-.col-sm{
-    margin:2em 1em;
+    width:90%;
 }
 
 .col-sm img{
     border-radius:0.8em;
-    padding-bottom:2em;
+    margin-bottom:2em;
     width:100%;
+   
 }
 
 details[open] summary {
@@ -34,9 +30,10 @@ details[open] summary {
 }
 
 details div img{
-    width:60%;
+    /* width:60%; */
     padding-left: 5em;
-    padding-right: 5em;   
+    padding-right: 5em; 
+    width:100%;
     
 }
 
@@ -44,16 +41,17 @@ details div img{
     padding-bottom:1em;
 }
 
-span {
-    margin: 1em 3em;
-    display:block;
+.row{
+    margin-top:1em;
 }
+
 
 details {
     margin:2em 0em;
     background: #e4eaef;
     border-radius: 5px;
-    width:90%;
+    width:fit-content;
+    min-width:100%;
 
 }
 

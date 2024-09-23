@@ -22,16 +22,16 @@
 
     <div class="sidebar">
         <ul class="nav nav-sidebar">
-            <li> <a href="/portfolio/#about">about</a> </li>
-            <li> <a href="/portfolio/#projects">projects</a> </li>
-            <li> <a href="/portfolio/#hobbies">hobbies</a> </li>
-            <li> <a href="/portfolio/#connect">connect</a> </li>
+            <li> <a href="/#about">about</a> </li>
+            <li> <a href="/#projects">projects</a> </li>
+            <li> <a href="/#hobbies">hobbies</a> </li>
+            <li> <a href="/#connect">connect</a> </li>
         </ul>
     </div>
 
     <main>
         <div class="separator">
-            <h2>ndvi calculation & display</h2>
+            <h2>ndvi display</h2>
             <div class="container">
                 <div class="row">
                     <h4>
@@ -64,17 +64,21 @@
                     </div>
 
                 </div>
-                <div class="col-sm">
-                    <h3>Image Alignment</h3>
-                    For many multispectral cameras, the sensors for each band are physically separated on the drone.
-                    This creates an offset between the bands, which is more noticeable the closer the drone flies to the
-                    ground. The image on the left is the combined B, G, and R bands without any alignment. The image
-                    library implements an image alignment algorithm to mitigate this issue, as seen in the rightmost
-                    image below:
+                <div class = "row">
+                    <div class="col-sm">
+                        <h3>Image Alignment</h3>
+                        For many multispectral cameras, the sensors for each band are physically separated on the drone.
+                        This creates an offset between the bands, which is more noticeable the closer the drone flies to the
+                        ground. The image on the left is the combined B, G, and R bands without any alignment. The image
+                        library implements an image alignment algorithm to mitigate this issue, as seen in the rightmost
+                        image below:
+                    </div>
                 </div>
+                <div class = "row">
+
                 <div class="col-sm">
                     <img src="../images/projects/ndvi/align.png" title="align" alt="align">
-                </div>
+                </div></div>
 
                 <div class="row">
                     <div class="col-sm">
@@ -98,12 +102,9 @@
                     <details>
                         <summary>Other Features</summary>
                         <div>
-                            <img src="../images/projects/ndvi/colormap.png" title="colormap" alt="colormap">
-                        </div>
-                        <div>
                             <ul class = "space-under">
                                 <li>
-                                    Customizable colormaps (see image)
+                                    Customizable colormaps
                                 </li>
                                 <li>
                                     Image download as PNG, TIF, or JPEG
