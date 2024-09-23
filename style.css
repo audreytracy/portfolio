@@ -47,13 +47,13 @@ body{
     }
     .sidebar ul {
         color: rgb(215, 53, 215);
-
         margin: 0;
         position: absolute;
         top: 40%;
         -ms-transform: translateY(-40%);
         transform: translateY(-40%);
     }
+
     footer {
         margin-left: 180px;
     }
@@ -164,7 +164,6 @@ a:hover {
     background-image: url("images/backgrounds/plane.jpg");
 }
 
-
 .separator {
     padding: 3em;
     height: fit-content;
@@ -182,14 +181,16 @@ p {
     text-align: center;
     margin: auto;
     width: 80%;
-    padding-top: 60px;
     font-size: calc(50% + 1vw);
 
     a {
+        text-decoration: underline;
         color: #302547;
     }
 
     a:hover {
+        text-decoration: underline;
+
         color: #302547;
     }
 }
@@ -201,4 +202,27 @@ footer {
         font-size: 1vw;
         padding:5px;
     }
+}
+
+form{
+    margin:1.2em 1em;
+    border-radius:1em;
+    padding:1em;
+    background-color: #cbcbcb;
+    width:60%;
+    
+    h5{
+        text-align: center;
+    }
+}
+
+.btn{
+    background-color: #7657b3;
+    border-color: #7657b3;
+}
+
+.btn:hover{
+    background-color: #ab97d4;
+    border-color: #7657b3;
+
 }

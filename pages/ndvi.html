@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- my css -->
-    <link rel="stylesheet" type="text/css" href="../style.css">
     <link rel="stylesheet" type="text/css" href="../details.css">
+
+    <link rel="stylesheet" type="text/css" href="../style.css">
     <title>audrey website</title>
     <!-- font from google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,48 +23,140 @@
     <div class="sidebar">
         <ul class="nav nav-sidebar">
             <li> <a href="/#about">about</a> </li>
-            <li> <a href="/#hobbies">hobbies</a> </li>
             <li> <a href="/#projects">projects</a> </li>
+            <li> <a href="/#hobbies">hobbies</a> </li>
             <li> <a href="/#connect">connect</a> </li>
         </ul>
     </div>
 
     <main>
         <div class="separator">
-            <h2>NDVI Calculation & Display</h2>
-            
-            
-            <details>
-                <summary>System Design</summary>
-                <div>
-                    <img class="card-img-top" src="/images/projects/ndvi/architecture.png" title="library" alt="library">
+            <h2>ndvi calculation & display</h2>
+            <div class="container">
+                <div class="row">
+                    <h4>
+                        React & FastAPI Web Application for the processing, calculation, and display of Normalized
+                        Difference Vegetation Index (NDVI), a vegetation-health metric
+                    </h4>
                 </div>
-                
-              </details>   
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="/images/projects/ndvi.png" title="library" alt="library">
+                    </div>
+                    <div class="col-sm">
+                        <h3>Overview</h3>
+                        This application's main focus is to calculate & display the NDVI image given a set of
+                        multispectral imagery. NDVI returns a value between -1 and 1, indicating general vegetation
+                        health (based on the ratio between reflectance of R and NIR wavelengths, which is different when
+                        comparing healthy vegetation to stressed vegetation or non-vegetation).
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <h3>System Design</h3>
+                        The image library contains all image-processing logic (image band separation, index calculation,
+                        image alignment, etc.). The API calls methods from the image library & acts as an in-between for
+                        the frontend & the image library. The API & image library may be hosted on their own server
+                        (separate from frontend) as part of modular design.
+                    </div>
+                    <div class="col-sm">
+                        <img src="/images/projects/ndvi/architecture.png" title="library" alt="library">
+                    </div>
 
-              <details>
-                <summary>Colormap</summary>
-                <div>
-                    <img class="card-img-top" src="/images/projects/ndvi/colormap.png" title="library" alt="library">
                 </div>
-                
-              </details> 
+                <div class="col-sm">
+                    <h3>Image Alignment</h3>
+                    For many multispectral cameras, the sensors for each band are physically separated on the drone.
+                    This creates an offset between the bands, which is more noticeable the closer the drone flies to the
+                    ground. The image on the left is the combined B, G, and R bands without any alignment. The image
+                    library implements an image alignment algorithm to mitigate this issue, as seen in the rightmost
+                    image below:
+                </div>
+                <div class="col-sm">
+                    <img src="/images/projects/ndvi/align.png" title="library" alt="library">
+                </div>
 
-              <details>
-                <summary>System Design</summary>
-                <div>
-                    <img class="card-img-top" src="/images/projects/ndvi/architecture.png" title="library" alt="library">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="/images/projects/ndvi/image.png" title="library" alt="library">
+                    </div>
+                    <div class="col-sm">
+                        <h3>Input Imagery</h3>
+                        There are two fully-implemented input formats:
+                        <ul>
+                            <li>
+                                Four separate B, G, R, & NIR single-band images (see image)
+                            </li>
+                            <li>
+                                Two separate RGB (3-band) & NIR (single-band) images
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                
-              </details> 
+
+                <div class="col-sm">
+                    <details>
+                        <summary>Other Features</summary>
+                        <div>
+                            <img src="/images/projects/ndvi/colormap.png" title="library" alt="library">
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    Customizable colormaps (see image)
+                                </li>
+                                <li>
+                                    Image download as PNG, TIF, or JPEG
+                                </li>
+                                <li>
+                                    Single-image upload or bulk upload
+                                </li>
+                                <li>
+                                    Multiple algorithms:
+                                    <ul>
+                                        <li>
+                                            NDVI - Normalized Difference Vegetation Index
+                                        </li>
+                                        <li>
+                                            SAVI - Soil Adjusted Vegetation Index
+                                        </li>
+                                        <li>
+                                            VARI - Visible Atmospherically Resistant Index
+                                        </li>
+                                        <li>
+                                            BAI - Burn Area Index
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+                <div class="col-sm">
+                    <details>
+                        <summary>Future Work</summary>
+                        <ul>
+                            <li>
+                                GPS data use & image-stitching capabilities
+                                <ul>
+                                    <li>rasterio python library is already used in the image library, which will make implementation of this feature relatively simple</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Database implementation for tracking of vegetation imagery over time for a given area
+                            </li>
+                            <li>
+                                User accounts & login for greater security & customization of user experience
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
         </div>
-        
-       
-
     </main>
 
     <footer>
-        <p> 2024 </p>
+        <p> Audrey Tracy - Updated 2024 </p>
     </footer>
 
 </body>

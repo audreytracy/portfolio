@@ -5,23 +5,57 @@ summary {
     border-radius: 5px;
 }
 
+h4{
+    text-align: center;
+}
+
+
+
+.container{
+    margin-top:1em;
+    width:80%;
+}
+
+.col-sm{
+    margin:2em 1em;
+}
+
+.col-sm img{
+    border-radius:0.8em;
+    padding-bottom:2em;
+    width:100%;
+}
+
 details[open] summary {
     border-radius: 5px 5px 0 0;
 }
 
-div {
-
+details div img{
+    width:60%;
     padding-left: 5em;
-    padding-right: 5em;
+    padding-right: 5em;   
+    
+}
 
-    img{
-        width:1em;
+ul{
+    padding-bottom:1em;
+    ul{
+        padding-bottom:0em;
     }
 }
 
+span {
+    margin: 1em 3em;
+    display:block;
+}
+
 details {
-    margin:2em 5em;
+    margin:2em 0em;
     background: #e4eaef;
     border-radius: 5px;
+    width:90%;
+
 }
+
+
 
