@@ -3,14 +3,15 @@
     color: #302547;
 }
 
-body{
+body {
     background-color: #b4b4b5;
 }
 
 @media (min-width:300px) {
+
     /* phones */
     .sidebar {
-        padding:7px 2px 7px 0px;
+        padding: 7px 2px 7px 0px;
         text-indent: 25px;
         position: fixed;
         top: 0;
@@ -23,19 +24,28 @@ body{
         width: 100%;
         font-size: 120%;
     }
-    form{
-        width:75%;
+
+    form {
+        width: 75%;
     }
 
     footer {
         p {
-            font-size:90%;
+            font-size: 90%;
         }
+    }
+
+    #me {
+        width:60%;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        border-radius: 1em;
     }
 
 }
 
 @media (min-width:1025px) {
+
     /* laptops */
     .sidebar {
         text-indent: 25px;
@@ -55,6 +65,7 @@ body{
         height: 100;
         font-size: 180%;
     }
+
     .sidebar ul {
         color: rgb(215, 53, 215);
         margin: 0;
@@ -67,16 +78,26 @@ body{
     footer {
         margin-left: 180px;
 
-        p{
-            font-size:80%;
+        p {
+            font-size: 80%;
         }
     }
+
     main {
 
         margin-left: 180px;
     }
-    form{
-        width:60%;
+
+    form {
+        width: 60%;
+    }
+
+    #me {
+        width:30%;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        border-radius: 1em;
+
     }
 
 }
@@ -85,21 +106,21 @@ body{
     padding: 5px;
 }
 
-.card-subtitle{
-    align-items:right;
+.card-subtitle {
+    align-items: right;
 }
 
-a .card:hover{
-    font-weight:normal;
+a .card:hover {
+    font-weight: normal;
 }
 
 .card {
-    border-radius:1em;
+    border-radius: 1em;
     background-color: #cbcbcb;
     margin: -1px;
 
     img {
-        border-radius:1em;
+        border-radius: 1em;
         background-color: #313131;
     }
 
@@ -108,7 +129,7 @@ a .card:hover{
     }
 
     .card-body {
-        border-radius:1em;
+        border-radius: 1em;
 
         background-color: #cbcbcb;
 
@@ -127,8 +148,8 @@ a .card:hover{
 
 }
 
-.clickable:hover{
-    border-color:#c0c0c1;
+.clickable:hover {
+    border-color: #c0c0c1;
     border-width: 3px;
 }
 
@@ -180,20 +201,11 @@ a:hover {
     background-image: url("images/backgrounds/plane.jpg");
 }
 
-#me{
-   text-align: center;
-   img{
-    margin-top:1.5em;
-    margin-bottom:1em;
-    border-radius:1em;
-
-   }
-}
-
 .separator {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertically center the content */
+    justify-content: center;
+    /* Vertically center the content */
     padding: 3em;
     height: fit-content;
     min-height: 105vh;
@@ -202,8 +214,8 @@ a:hover {
     overflow: inherit;
 }
 
-#connect{
-    min-height:0px;
+#connect {
+    min-height: 0px;
 }
 
 p {
@@ -226,33 +238,35 @@ p {
 
 footer {
     background-color: #9d9d9d;
+
     p {
-        color:rgb(232, 232, 232);
-        padding:5px;
-        a{
-            color:rgb(200, 200, 200);
-            text-decoration:none;
+        color: rgb(232, 232, 232);
+        padding: 5px;
+
+        a {
+            color: rgb(200, 200, 200);
+            text-decoration: none;
         }
     }
 }
 
-form{
-    margin:1.2em 2vw;
-    border-radius:1em;
-    padding:1em;
+form {
+    margin: 1.2em 2vw;
+    border-radius: 1em;
+    padding: 1em;
     background-color: #cbcbcb;
-    
-    h5{
+
+    h5 {
         text-align: center;
     }
 }
 
-.btn{
+.btn {
     background-color: #7657b3;
     border-color: #7657b3;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #ab97d4;
     border-color: #7657b3;
 
