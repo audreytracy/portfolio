@@ -229,6 +229,10 @@ footer {
     p {
         color:rgb(232, 232, 232);
         padding:5px;
+        a{
+            color:rgb(200, 200, 200);
+            text-decoration:none;
+        }
     }
 }
 
