@@ -46,7 +46,10 @@
         <div id="about" class="separator">
             <h2>about</h2>
 
-            <div class="row justify-content-center vert-center">
+            <div class="row justify-content-center">
+                <div id = "me">
+                    <img src="me.jfif" alt="Description" style="width: 40vw;">
+                </div>
                 <form>
                     <p>
                         I'm a December 2024 graduate with a Bachelor of Science in Computer Science and a passion for
@@ -57,12 +60,6 @@
                 </form>
                 <form>
                     <p>
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                            class="bi bi-file-earmark-person" viewBox="0 0 16 16">
-                            <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                            <path
-                                d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5z" />
-                        </svg> -->
                         take a look at my <a href="documents/resume.pdf">resume</a>
                     </p>
 
@@ -75,11 +72,10 @@
             <h2>projects</h2>
             <div class="row row-cols-3 row-cols-md-2 g-4">
                 <div class="col">
-                    <a href="pages/ndvi.html" style="pointer:cursor">
-                        <div class="card h-100">
+                    <a href="pages/ndvi.html">
+                        <div class="clickable card h-100">
                             <img class="card-img-top" src="images/projects/ndvi.png" title="ndvi" alt="ndvi">
                             <div class="card-body">
-
                                 <h5 class="card-title">NDVI Visualization</h5>
                                 <code class="card-subtitle mb-2">Python, JavaScript</code>
                                 <div class="card-text">React web application for upload, processing, and display of
@@ -91,7 +87,7 @@
                 </div>
                 <div class="col">
                     <a href="https://github.com/audreytracy/estimate">
-                        <div class="card h-100">
+                        <div class="clickable card h-100">
                             <img class="card-img-top" src="images/projects/estimate.png" title="estimate"
                                 alt="estimate">
                             <div class="card-body">
@@ -106,7 +102,7 @@
                 </div>
                 <div class="col">
                     <a href="https://github.com/audreytracy/library-app">
-                        <div class="card h-100">
+                        <div class="clickable card h-100">
                             <img class="card-img-top" src="images/projects/library.png" title="library" alt="library">
                             <div class="card-body">
                                 <h5 class="card-title">Library Database</h5>
@@ -120,8 +116,8 @@
                 </div>
 
                 <div class="col">
-                    <a href="pages/sprinkler.html" style="pointer:cursor">
-                        <div class="card h-100">
+                    <a href="pages/sprinkler.html">
+                        <div class="clickable card h-100">
                             <img class="card-img-top" src="images/projects/pi.png" title="sprinkler" alt="sprinkler">
                             <div class="card-body">
                                 <h5 class="card-title">Sprinkler Control</h5>
@@ -176,13 +172,15 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="images/hobbies/music.png" title="music production"
-                            alt="music production">
-                        <div class="card-body">
-                            <h5 class="card-title">Music Production</h5>
+                    <a href = "sample.mp3">
+                    <div class="clickable card h-100">
+                            <img class="card-img-top" src="images/hobbies/music.png" title="music production"
+                                alt="music production">
+                            <div class="card-body">
+                                <h5 class="card-title">Music Production</h5>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>

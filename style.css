@@ -27,6 +27,12 @@ body{
         width:75%;
     }
 
+    footer {
+        p {
+            font-size:90%;
+        }
+    }
+
 }
 
 @media (min-width:1025px) {
@@ -60,6 +66,10 @@ body{
 
     footer {
         margin-left: 180px;
+
+        p{
+            font-size:80%;
+        }
     }
     main {
 
@@ -84,9 +94,6 @@ a .card:hover{
 }
 
 .card {
-
-    
-
     border-radius:1em;
     background-color: #cbcbcb;
     margin: -1px;
@@ -120,7 +127,7 @@ a .card:hover{
 
 }
 
-#projects .card:hover{
+.clickable:hover{
     border-color:#c0c0c1;
     border-width: 3px;
 }
@@ -173,7 +180,20 @@ a:hover {
     background-image: url("images/backgrounds/plane.jpg");
 }
 
+#me{
+   text-align: center;
+   img{
+    margin-top:1.5em;
+    margin-bottom:1em;
+    border-radius:1em;
+
+   }
+}
+
 .separator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
     padding: 3em;
     height: fit-content;
     min-height: 105vh;
@@ -208,7 +228,6 @@ footer {
     background-color: #9d9d9d;
     p {
         color:rgb(232, 232, 232);
-        font-size: 1vw;
         padding:5px;
     }
 }
