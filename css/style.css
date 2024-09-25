@@ -186,19 +186,19 @@ a:hover {
 
 .mtn-background {
     min-height: 100vh;
-    background-image: url("images/backgrounds/mtn.jpg");
+    background-image: url("../images/backgrounds/mtn.jpg");
 }
 
 .road-background {
-    background-image: url("images/backgrounds/road.jpg");
+    background-image: url("../images/backgrounds/road.jpg");
 }
 
 .river-background {
-    background-image: url("images/backgrounds/river.jpg");
+    background-image: url("../images/backgrounds/river.jpg");
 }
 
 .plane-background {
-    background-image: url("images/backgrounds/plane.jpg");
+    background-image: url("../images/backgrounds/plane.jpg");
 }
 
 .separator {
