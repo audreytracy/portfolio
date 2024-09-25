@@ -9,7 +9,6 @@
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- my css -->
     <link rel="stylesheet" type="text/css" href="../css/details.css">
-
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Audrey Tracy | Sprinkler</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -42,56 +41,38 @@
                 </div>
                 <div class="row">
                     <div class="col-sm">
-                        <img src="/images/projects/ndvi.png" title="library" alt="library">
+                        <img src="..." title="..." alt="...">
                     </div>
                     <div class="col-sm">
                         <h3>Overview</h3>
-                        This application's main focus is to calculate & display the NDVI image given a set of
-                        multispectral imagery. NDVI returns a value between -1 and 1, indicating general vegetation
-                        health (based on the ratio between reflectance of R and NIR wavelengths, which is different when
-                        comparing healthy vegetation to stressed vegetation or non-vegetation).
+                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quidem debitis architecto temporibus repudiandae nostrum id quas velit eius! Fugit, ea eos? Alias impedit quos qui animi modi, earum neque!
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm">
                         <h3>System Design</h3>
-                        The image library contains all image-processing logic (image band separation, index calculation,
-                        image alignment, etc.). The API calls methods from the image library & acts as an in-between for
-                        the frontend & the image library. The API & image library may be hosted on their own server
-                        (separate from frontend) as part of modular design.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab et a cumque odit eaque delectus atque, quam enim ad, doloremque temporibus quis culpa laboriosam ipsa pariatur eligendi praesentium similique expedita?
                     </div>
                     <div class="col-sm">
-                        <img src="/images/projects/ndvi/architecture.png" title="library" alt="library">
+                        <img src="..." title="..." alt="...">
                     </div>
 
                 </div>
                 <div class="col-sm">
-                    <h3>Image Alignment</h3>
-                    For many multispectral cameras, the sensors for each band are physically separated on the drone.
-                    This creates an offset between the bands, which is more noticeable the closer the drone flies to the
-                    ground. The image on the left is the combined B, G, and R bands without any alignment. The image
-                    library implements an image alignment algorithm to mitigate this issue, as seen in the rightmost
-                    image below:
+                    <h3>Title 1</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsa aut mollitia animi consequatur exercitationem, architecto provident praesentium id dignissimos perspiciatis dicta corrupti sit dolores tempora eaque. Sint, maiores nesciunt.
                 </div>
                 <div class="col-sm">
-                    <img src="/images/projects/ndvi/align.png" title="library" alt="library">
+                    <img src="..." title="..." alt="...">
                 </div>
 
                 <div class="row">
                     <div class="col-sm">
-                        <img src="/images/projects/ndvi/image.png" title="library" alt="library">
+                        <img src="..." title="..." alt="...">
                     </div>
                     <div class="col-sm">
-                        <h3>Input Imagery</h3>
-                        There are two fully-implemented input formats:
-                        <ul>
-                            <li>
-                                Four separate B, G, R, & NIR single-band images (see image)
-                            </li>
-                            <li>
-                                Two separate RGB (3-band) & NIR (single-band) images
-                            </li>
-                        </ul>
+                        <h3>Title 2</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut obcaecati, asperiores ab reprehenderit doloremque iure perspiciatis. Qui ipsa aut doloribus veritatis, ratione quisquam impedit ad, modi non dicta, natus sequi.
                     </div>
                 </div>
 
@@ -99,37 +80,10 @@
                     <details>
                         <summary>Other Features</summary>
                         <div>
-                            <img src="/images/projects/ndvi/colormap.png" title="library" alt="library">
+                            <img src="..." title="..." alt="...">
                         </div>
                         <div>
-                            <ul>
-                                <li>
-                                    Customizable colormaps (see image)
-                                </li>
-                                <li>
-                                    Image download as PNG, TIF, or JPEG
-                                </li>
-                                <li>
-                                    Single-image upload or bulk upload
-                                </li>
-                                <li>
-                                    Multiple algorithms:
-                                    <ul>
-                                        <li>
-                                            NDVI - Normalized Difference Vegetation Index
-                                        </li>
-                                        <li>
-                                            SAVI - Soil Adjusted Vegetation Index
-                                        </li>
-                                        <li>
-                                            VARI - Visible Atmospherically Resistant Index
-                                        </li>
-                                        <li>
-                                            BAI - Burn Area Index
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor numquam voluptate eum. Sed, vel impedit voluptatibus molestiae voluptatem sapiente iusto dolorem, molestias modi facilis perferendis hic non suscipit enim et.
                         </div>
                     </details>
                 </div>
@@ -138,16 +92,13 @@
                         <summary>Future Work</summary>
                         <ul>
                             <li>
-                                GPS data use & image-stitching capabilities
-                                <ul>
-                                    <li>rasterio python library is already used in the image library, which will make implementation of this feature relatively simple</li>
-                                </ul>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque repellat rerum numquam sed? Provident, veritatis assumenda. Impedit facere corrupti, perferendis perspiciatis unde repellat iusto ab, sint est, deleniti fuga.
                             </li>
                             <li>
-                                Database implementation for tracking of vegetation imagery over time for a given area
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque repellat rerum numquam sed? Provident, veritatis assumenda. Impedit facere corrupti, perferendis perspiciatis unde repellat iusto ab, sint est, deleniti fuga.
                             </li>
                             <li>
-                                User accounts & login for greater security & customization of user experience
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque repellat rerum numquam sed? Provident, veritatis assumenda. Impedit facere corrupti, perferendis perspiciatis unde repellat iusto ab, sint est, deleniti fuga.
                             </li>
                         </ul>
                     </details>
