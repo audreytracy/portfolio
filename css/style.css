@@ -231,7 +231,6 @@ p {
 
     a:hover {
         text-decoration: underline;
-
         color: #302547;
     }
 }
@@ -258,6 +257,10 @@ form {
 
     h5 {
         text-align: center;
+        a{
+            font-weight:bold;
+            color:#231144;
+        }
     }
 }
 
