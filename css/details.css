@@ -51,8 +51,40 @@ details {
     border-radius: 5px;
     /* width:fit-content; */
     /* width:60vw; */
+}
 
+video{
+    border-radius:1em;
+}
+
+.col-sm{
+    min-width:300px;
+    div{
+        margin-top:0.5em;
+    }
 }
 
 
+@media (min-width:300px) {
+
+    .separator{
+        padding:1em;
+    }
+
+    .row{
+
+        margin-bottom:3em;
+    }
+}
+
+@media (min-width:1025px) {
+
+    .separator{
+        padding:3em;
+    }
+
+    .row{
+        margin-bottom:0em;
+    }
+}
 

@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- my css -->
-    <link rel="stylesheet" type="text/css" href="../css/details.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/details.css">
+
     <title>Audrey Tracy | Sprinkler</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 
@@ -32,76 +34,171 @@
 
     <main>
         <div class="separator">
-            <h2>Sprinkler Control</h2>
+            <h2>sprinkler control</h2>
             <div class="container">
+                
                 <div class="row">
                     <h4>
-                        Angular Web Application for the wireless control of home sprinkler system
+                        IoT project featuring an Angular web application & a Raspberry Pi-controlled back-end for the
+                        wireless control of a home sprinkler system
                     </h4>
                 </div>
                 <div class="row">
                     <div class="col-sm">
-                        <img src="..." title="..." alt="...">
+                        <img src="../images/projects/sprinkler/ss.PNG" title="..." alt="...">
                     </div>
                     <div class="col-sm">
                         <h3>Overview</h3>
-                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quidem debitis architecto temporibus repudiandae nostrum id quas velit eius! Fugit, ea eos? Alias impedit quos qui animi modi, earum neque!
+                        <div>
+                            This is an ongoing project! Since this is a personal project & development happens when I'm not otherwise occupied with work or school, it takes a while to add features.
+                        </div>
+                        <div>
+                            The ultimate goal of this project is to make a smart sprinkler system that can change its behavior based on the weather forecast. 
+                        </div>
+                        <div>
+                            Right now the baseline functionality of the existing hardware sprinkler control system is being implemented.
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm">
                         <h3>System Design</h3>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab et a cumque odit eaque delectus atque, quam enim ad, doloremque temporibus quis culpa laboriosam ipsa pariatur eligendi praesentium similique expedita?
+                        <div>
+                           Take a look at my system specification document for a set of requirements, design diagrams, & release benchmarks.
+                        </div>
+                        <div>
+                            To avoid having an open internet-facing device on a home network (which could introduce security risks), a cloud database tracks the sprinkler system & the Raspberry Pi simply reads from this database
+                        </div>
                     </div>
                     <div class="col-sm">
-                        <img src="..." title="..." alt="...">
+                        <img src="../images/projects/sprinkler/diagram.png" title="..." alt="...">
                     </div>
-
-                </div>
-                <div class="col-sm">
-                    <h3>Title 1</h3>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsa aut mollitia animi consequatur exercitationem, architecto provident praesentium id dignissimos perspiciatis dicta corrupti sit dolores tempora eaque. Sint, maiores nesciunt.
-                </div>
-                <div class="col-sm">
-                    <img src="..." title="..." alt="...">
                 </div>
 
                 <div class="row">
                     <div class="col-sm">
-                        <img src="..." title="..." alt="...">
+                        <video width="100%" height="auto" controls>
+                            <source src="../images/projects/sprinkler/login.mp4" type="video/mp4">
+                            Unsupported video - login.mp4
+                        </video>
                     </div>
                     <div class="col-sm">
-                        <h3>Title 2</h3>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut obcaecati, asperiores ab reprehenderit doloremque iure perspiciatis. Qui ipsa aut doloribus veritatis, ratione quisquam impedit ad, modi non dicta, natus sequi.
+                        <h3>Login & Account Creation</h3>
+                        <div>
+                            The user either logs in or creates an account with their email. This creates a UID for the
+                            user in Firebase Auth, which is used to reference the user
+                            for all other applications of the system.
+                        </div>
+                        <div>
+                            The user can view their zones on their dashboard. If the user is logging in for the first
+                            time they will be directed to connect their Raspberry Pi. This only happens once.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <h3>Initial Connection</h3>
+                        <div>
+                            If the user has just logged in for the first time and has not registered their Raspberry Pi
+                            they will be prompted to enter the Pi's IP address. Note this is the only time both devices
+                            <strong>must be connected to the same network.</strong>
+                        </div>
+                        <div>
+                            The user will be promped to log in. Once the device is registered, the user's UID is stored
+                            on the Pi and the user can see their sprinkler zones on their dashboard.
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <video width="100%" height="auto" controls>
+                            <source src="../images/projects/sprinkler/connection.mp4" type="video/mp4">
+                            Unsupported video - connection.mp4
+                        </video>
                     </div>
                 </div>
 
-                <div class="col-sm">
-                    <details>
-                        <summary>Other Features</summary>
+                <div class="row">
+                    <div class="col-sm">
+                        <video width="100%" height="auto" controls>
+                            <source src="../images/projects/sprinkler/toggle_zones.mp4" type="video/mp4">
+                            Unsupported video - toggle_zones.mp4
+                        </video>
+                    </div>
+                    <div class="col-sm">
+                        <h3>Remote control</h3>
                         <div>
-                            <img src="..." title="..." alt="...">
+                            From any network, the user can control their sprinkler system remotely using the web app.
                         </div>
                         <div>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor numquam voluptate eum. Sed, vel impedit voluptatibus molestiae voluptatem sapiente iusto dolorem, molestias modi facilis perferendis hic non suscipit enim et.
+                            The user can set how many zones they have connected, and can toggle these zones on & off.
                         </div>
-                    </details>
+                        <div>
+                            Note two zones cannot be on at once due to water pressure constraints.
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm">
-                    <details>
-                        <summary>Future Work</summary>
-                        <ul>
+                <div class="row">
+                    <div class="col-sm">
+                        <h3>GPIO Control</h3>
+                        <div>
+                            The user can control the sprinkler hardware connected to the Pi from anywhere (once I get
+                            the web app hosted).
+                        </div>
+                        <div>
+                            Surprisingly I didn't bring a home sprinkler system to college, so here's an LED stepping in
+                            for Zone 1
+                            to demo the GPIO signals.
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <video width="100%" height="auto" controls>
+                            <source src="../images/projects/sprinkler/led.mp4" type="video/mp4">
+                            Unsupported video - led.mp4
+                        </video>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <details>
+                            <summary>Other Features</summary>
+                            <ul>
                             <li>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque repellat rerum numquam sed? Provident, veritatis assumenda. Impedit facere corrupti, perferendis perspiciatis unde repellat iusto ab, sint est, deleniti fuga.
-                            </li>
-                            <li>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque repellat rerum numquam sed? Provident, veritatis assumenda. Impedit facere corrupti, perferendis perspiciatis unde repellat iusto ab, sint est, deleniti fuga.
-                            </li>
-                            <li>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque repellat rerum numquam sed? Provident, veritatis assumenda. Impedit facere corrupti, perferendis perspiciatis unde repellat iusto ab, sint est, deleniti fuga.
-                            </li>
-                        </ul>
-                    </details>
+                                    <strong>Get that cat!</strong> If you want the neighbor cat out of your yard you can interrupt your current sprinkler schedule by pressing the Get That Cat! button & entering the zone you want to turn on. All other zones turn off.
+                                </li>
+                                <li>
+                                    Grid or list view 
+                                </li>
+                                <li>
+                                    Zone scheduling (one-time, kind of like a timer that counts down. Repeat scheduling is under development)
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col-sm">
+                        <details>
+                            <summary>Future Work</summary>
+                            <ul>
+                                <li>
+                                    In progress: schedule saving (creating a timing schedule & being able to save & reuse that schedule)
+                                </li>
+                                <li>
+                                    In progress: secure login in initial device setup
+                                </li>
+                                <li>
+                                    Map visualization (aerial image of yard with clickable zones to toggle)
+                                </li>
+                                <li>
+                                    Implementation of weather API for automatic adjustment to watering schedule based on weather forecast
+                                </li>
+                                <li>
+                                    Mobile app - using Capacitor to create iOS and Android app (Capacitor is one of the main reasons I used Angular for this project)
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,7 +206,8 @@
 
     <footer>
         <p> Audrey Tracy - Updated 2024 </p>
-        <p><a href="https://www.flaticon.com/free-icons/letter-a" title="letter a icons">favicon credit: shohanur.rahman13</a></p>
+        <p><a href="https://www.flaticon.com/free-icons/letter-a" title="letter a icons">favicon credit:
+                shohanur.rahman13</a></p>
     </footer>
 
 </body>
