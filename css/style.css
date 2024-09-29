@@ -114,7 +114,13 @@ a .card:hover {
     font-weight: normal;
 }
 
+.col{
+    max-width:40vw;
+
+}
+
 .card {
+    max-width:40vw;
     border-radius: 1em;
     background-color: #cbcbcb;
     margin: -1px;

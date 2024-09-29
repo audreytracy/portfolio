@@ -36,7 +36,7 @@
         <div class="separator">
             <h2>sprinkler control</h2>
             <div class="container">
-                
+
                 <div class="row">
                     <h4>
                         IoT project featuring an Angular web application & a Raspberry Pi-controlled back-end for the
@@ -50,13 +50,16 @@
                     <div class="col-sm">
                         <h3>Overview</h3>
                         <div>
-                            This is an ongoing project! Since this is a personal project & development happens when I'm not otherwise occupied with work or school, it takes a while to add features.
+                            This is an ongoing project! Since this is a personal project & development happens when I'm
+                            not otherwise occupied with work or school, it takes a while to add features.
                         </div>
                         <div>
-                            The ultimate goal of this project is to make a smart sprinkler system that can change its behavior based on the weather forecast. 
+                            The ultimate goal of this project is to make a smart sprinkler system that can change its
+                            behavior based on the weather forecast.
                         </div>
                         <div>
-                            Right now the baseline functionality of the existing hardware sprinkler control system is being implemented.
+                            Right now the baseline functionality of the existing hardware sprinkler control system is
+                            being implemented.
                         </div>
                     </div>
                 </div>
@@ -64,10 +67,13 @@
                     <div class="col-sm">
                         <h3>System Design</h3>
                         <div>
-                           Take a look at my system specification document for a set of requirements, design diagrams, & release benchmarks.
+                            Take a look at my system specification document for a set of requirements, design diagrams,
+                            & release benchmarks.
                         </div>
                         <div>
-                            To avoid having an open internet-facing device on a home network (which could introduce security risks), a cloud database tracks the sprinkler system & the Raspberry Pi simply reads from this database
+                            To avoid having an open internet-facing device on a home network (which could introduce
+                            security risks), a cloud database tracks the sprinkler system & the Raspberry Pi simply
+                            reads from this database
                         </div>
                     </div>
                     <div class="col-sm">
@@ -77,7 +83,7 @@
 
                 <div class="row">
                     <div class="col-sm">
-                        <video width="100%" height="auto" controls>
+                        <video width="100%" height="auto" controls autoplay>
                             <source src="../images/projects/sprinkler/login.mp4" type="video/mp4">
                             Unsupported video - login.mp4
                         </video>
@@ -109,7 +115,7 @@
                         </div>
                     </div>
                     <div class="col-sm">
-                        <video width="100%" height="auto" controls>
+                        <video width="100%" height="auto" controls autoplay>
                             <source src="../images/projects/sprinkler/connection.mp4" type="video/mp4">
                             Unsupported video - connection.mp4
                         </video>
@@ -118,7 +124,7 @@
 
                 <div class="row">
                     <div class="col-sm">
-                        <video width="100%" height="auto" controls>
+                        <video width="100%" height="auto" controls autoplay>
                             <source src="../images/projects/sprinkler/toggle_zones.mp4" type="video/mp4">
                             Unsupported video - toggle_zones.mp4
                         </video>
@@ -150,7 +156,7 @@
                         </div>
                     </div>
                     <div class="col-sm">
-                        <video width="100%" height="auto" controls>
+                        <video width="100%" height="auto" controls autoplay>
                             <source src="../images/projects/sprinkler/led.mp4" type="video/mp4">
                             Unsupported video - led.mp4
                         </video>
@@ -161,14 +167,19 @@
                         <details>
                             <summary>Other Features</summary>
                             <ul>
-                            <li>
-                                    <strong>Get that cat!</strong> If you want the neighbor cat out of your yard you can interrupt your current sprinkler schedule by pressing the Get That Cat! button & entering the zone you want to turn on. All other zones turn off.
+                                <li>
+                                    <strong>Get that cat!</strong> If you want the neighbor cat out of your yard you can
+                                    interrupt your current sprinkler schedule by pressing the Get That Cat! button &
+                                    entering the zone you want to turn on. All other zones turn off.
+                                    <br/>
+                                    <img id = "cat" src="../images/projects/sprinkler/get_that_cat.PNG">
                                 </li>
                                 <li>
-                                    Grid or list view 
+                                    Grid or list view
                                 </li>
                                 <li>
-                                    Zone scheduling (one-time, kind of like a timer that counts down. Repeat scheduling is under development)
+                                    Zone scheduling (one-time, kind of like a timer that counts down. Repeat scheduling
+                                    is under development)
                                 </li>
                             </ul>
                         </details>
@@ -182,7 +193,8 @@
                             <summary>Future Work</summary>
                             <ul>
                                 <li>
-                                    In progress: schedule saving (creating a timing schedule & being able to save & reuse that schedule)
+                                    In progress: schedule saving (creating a timing schedule & being able to save &
+                                    reuse that schedule)
                                 </li>
                                 <li>
                                     In progress: secure login in initial device setup
@@ -191,10 +203,12 @@
                                     Map visualization (aerial image of yard with clickable zones to toggle)
                                 </li>
                                 <li>
-                                    Implementation of weather API for automatic adjustment to watering schedule based on weather forecast
+                                    Implementation of weather API for automatic adjustment to watering schedule based on
+                                    weather forecast
                                 </li>
                                 <li>
-                                    Mobile app - using Capacitor to create iOS and Android app (Capacitor is one of the main reasons I used Angular for this project)
+                                    Mobile app - using Capacitor to create iOS and Android app (Capacitor is one of the
+                                    main reasons I used Angular for this project)
                                 </li>
                             </ul>
                         </details>
